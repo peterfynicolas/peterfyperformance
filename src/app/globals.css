@@ -20,7 +20,12 @@
 }
 
 body {
-  background: var(--background);
+  background: url("/images/background_image_version_0001.avif") no-repeat center center fixed;
+  background-size: cover;
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-dm), sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-bebas), sans-serif;
 }
