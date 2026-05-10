@@ -137,7 +137,7 @@ export default function Home() {
               {/* Türkiser Akzent hinter dem Bild */}
               <div className="absolute -bottom-4 -right-4 h-full w-full rounded-2xl border border-[#3fbf8d]/20" />
               <Image
-                src="/images/nicolas-peterfy-3.avif"
+                src="/images/nicolas-peterfy-3 (1).png"
                 alt="Athlet beim Sprint"
                 sizes="(max-width: 640px) 260px, 280px"
                 width={280}
