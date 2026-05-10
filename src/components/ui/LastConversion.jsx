@@ -8,8 +8,8 @@ export default function LastConversion() {
         {/* Text */}
         <div className="flex flex-col gap-5">
           <div className="flex items-center gap-3">
-            <div className="h-[2px] w-8 bg-[#00C9A7]" />
-            <span className="text-[0.7rem] uppercase tracking-[0.22em] text-[#00C9A7]">
+            <div className="h-[2px] w-8 bg-[#3fbf8d]" />
+            <span className="text-[0.7rem] uppercase tracking-[0.22em] text-[#3fbf8d]">
               Nächster Schritt
             </span>
           </div>
@@ -19,7 +19,7 @@ export default function LastConversion() {
             style={{ fontFamily: "var(--font-bebas)", fontSize: "clamp(2.8rem, 10vw, 5.5rem)" }}
           >
             Bereit für dein<br />
-            <span className="text-[#00C9A7]">nächstes Level?</span>
+            <span className="text-[#3fbf8d]">nächstes Level?</span>
           </h2>
 
           <p className="text-[0.95rem] font-light leading-relaxed text-white/40 max-w-sm">

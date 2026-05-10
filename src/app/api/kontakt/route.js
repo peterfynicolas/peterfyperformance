@@ -54,7 +54,7 @@ export async function POST(req) {
             <div style="background:#0a0a0a; border:1px solid rgba(255,255,255,0.08); padding:40px 32px; color:#ffffff; font-family:Arial, Helvetica, sans-serif;">
               
               <div style="margin-bottom:28px;">
-                <div style="display:inline-block; font-size:11px; letter-spacing:0.22em; text-transform:uppercase; color:#00C9A7; margin-bottom:14px;">
+                <div style="display:inline-block; font-size:11px; letter-spacing:0.22em; text-transform:uppercase; color:#3fbf8d; margin-bottom:14px;">
                   Neue Kontaktanfrage
                 </div>
                 <h1 style="margin:0; font-size:40px; line-height:0.95; font-weight:800; letter-spacing:-0.03em; color:#ffffff;">
@@ -64,7 +64,7 @@ export async function POST(req) {
 
               <div style="border-top:1px solid rgba(255,255,255,0.08); padding-top:24px;">
                 <div style="margin-bottom:18px;">
-                  <div style="font-size:12px; text-transform:uppercase; letter-spacing:0.14em; color:#00C9A7; margin-bottom:6px;">
+                  <div style="font-size:12px; text-transform:uppercase; letter-spacing:0.14em; color:#3fbf8d; margin-bottom:6px;">
                     Name
                   </div>
                   <div style="font-size:18px; line-height:1.6; color:rgba(255,255,255,0.88);">
@@ -73,7 +73,7 @@ export async function POST(req) {
                 </div>
 
                 <div style="margin-bottom:18px;">
-                  <div style="font-size:12px; text-transform:uppercase; letter-spacing:0.14em; color:#00C9A7; margin-bottom:6px;">
+                  <div style="font-size:12px; text-transform:uppercase; letter-spacing:0.14em; color:#3fbf8d; margin-bottom:6px;">
                     E-Mail
                   </div>
                   <div style="font-size:18px; line-height:1.6; color:rgba(255,255,255,0.88);">
@@ -84,7 +84,7 @@ export async function POST(req) {
                 </div>
 
                 <div style="margin-bottom:18px;">
-                  <div style="font-size:12px; text-transform:uppercase; letter-spacing:0.14em; color:#00C9A7; margin-bottom:6px;">
+                  <div style="font-size:12px; text-transform:uppercase; letter-spacing:0.14em; color:#3fbf8d; margin-bottom:6px;">
                     Sportart / Ziel
                   </div>
                   <div style="font-size:18px; line-height:1.6; color:rgba(255,255,255,0.88);">
@@ -93,7 +93,7 @@ export async function POST(req) {
                 </div>
 
                 <div style="margin-top:28px;">
-                  <div style="font-size:12px; text-transform:uppercase; letter-spacing:0.14em; color:#00C9A7; margin-bottom:10px;">
+                  <div style="font-size:12px; text-transform:uppercase; letter-spacing:0.14em; color:#3fbf8d; margin-bottom:10px;">
                     Nachricht
                   </div>
                   <div style="font-size:18px; line-height:1.8; color:rgba(255,255,255,0.78);">

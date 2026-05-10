@@ -63,7 +63,7 @@ function Stars() {
   return (
     <div className="flex gap-1" aria-label="5 von 5 Sternen">
       {Array.from({ length: 5 }).map((_, i) => (
-        <svg key={i} className="w-3 h-3 fill-[#00C9A7]" viewBox="0 0 24 24">
+        <svg key={i} className="w-3 h-3 fill-[#3fbf8d]" viewBox="0 0 24 24">
           <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
         </svg>
       ))}
@@ -74,7 +74,7 @@ function Stars() {
 function TestimonialCard({ item }) {
   return (
     <article className="relative flex flex-col gap-5 rounded-2xl border border-white/5 bg-[#111] p-7 overflow-hidden h-full">
-      <div className="absolute left-0 top-0 h-full w-[3px] rounded-l-2xl bg-gradient-to-b from-[#00C9A7] to-transparent" />
+      <div className="absolute left-0 top-0 h-full w-[3px] rounded-l-2xl bg-gradient-to-b from-[#3fbf8d] to-transparent" />
 
       <Stars />
 
@@ -85,13 +85,13 @@ function TestimonialCard({ item }) {
       <div className="flex items-center gap-3">
         <div
           aria-label={item.name}
-          className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-[#00C9A7] to-[#007a65] text-lg font-bold text-black"
+          className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-[#3fbf8d] to-[#007a65] text-lg font-bold text-black"
         >
           {item.initial}
         </div>
         <div className="flex-1 min-w-0">
           <p className="text-sm font-semibold text-white">{item.name}</p>
-          <p className="text-xs tracking-wide text-[#00C9A7]">{item.sport}</p>
+          <p className="text-xs tracking-wide text-[#3fbf8d]">{item.sport}</p>
         </div>
         <span className="text-[0.65rem] uppercase tracking-widest text-white/20">
           {item.duration}
@@ -135,7 +135,7 @@ function MobileSlideshow() {
                 width: i === active ? "20px" : "6px",
                 height: "6px",
                 borderRadius: "9999px",
-                background: i === active ? "#00C9A7" : "rgba(255,255,255,0.15)",
+                background: i === active ? "#3fbf8d" : "rgba(255,255,255,0.15)",
                 border: "none",
                 padding: 0,
                 cursor: "pointer",
@@ -150,7 +150,7 @@ function MobileSlideshow() {
           <button
             onClick={prev}
             aria-label="Zurück"
-            className="flex h-11 w-11 items-center justify-center rounded-xl border border-white/10 bg-[#111] text-white/50 transition-colors hover:border-[#00C9A7] hover:text-[#00C9A7]"
+            className="flex h-11 w-11 items-center justify-center rounded-xl border border-white/10 bg-[#111] text-white/50 transition-colors hover:border-[#3fbf8d] hover:text-[#3fbf8d]"
           >
             <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <polyline points="15 18 9 12 15 6" />
@@ -159,7 +159,7 @@ function MobileSlideshow() {
           <button
             onClick={next}
             aria-label="Weiter"
-            className="flex h-11 w-11 items-center justify-center rounded-xl border border-white/10 bg-[#111] text-white/50 transition-colors hover:border-[#00C9A7] hover:text-[#00C9A7]"
+            className="flex h-11 w-11 items-center justify-center rounded-xl border border-white/10 bg-[#111] text-white/50 transition-colors hover:border-[#3fbf8d] hover:text-[#3fbf8d]"
           >
             <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <polyline points="9 18 15 12 9 6" />
@@ -179,8 +179,8 @@ export default function Testimonials() {
         {/* Header */}
         <div className="mb-16">
           <div className="mb-5 flex items-center gap-3">
-            <div className="h-[2px] w-8 bg-[#00C9A7]" />
-            <span className="text-[0.7rem] uppercase tracking-[0.22em] text-[#00C9A7]">
+            <div className="h-[2px] w-8 bg-[#3fbf8d]" />
+            <span className="text-[0.7rem] uppercase tracking-[0.22em] text-[#3fbf8d]">
               Testimonials
             </span>
           </div>
@@ -191,7 +191,7 @@ export default function Testimonials() {
               style={{ fontFamily: "var(--font-bebas)", fontSize: "clamp(3rem, 13vw, 6rem)" }}
             >
               Was Athleten<br />
-              <span className="text-[#00C9A7]">über uns sagen.</span>
+              <span className="text-[#3fbf8d]">über uns sagen.</span>
             </h2>
             <p className="text-[0.95rem] font-light leading-relaxed text-white/40 md:max-w-xs">
               Keine Hochglanz-Versprechen —<br />
@@ -217,15 +217,15 @@ export default function Testimonials() {
             style={{ fontFamily: "var(--font-bebas)", fontSize: "clamp(2rem, 7vw, 4.5rem)" }}
           >
             „Built by science. Proven in performance.“ —{" "}
-            <span className="text-[#00C9A7]">sie kommen, um besser zu werden.</span>"
+            <span className="text-[#3fbf8d]">sie kommen, um besser zu werden.</span>"
           </p>
           <div className="mt-8 flex items-center gap-4">
-            <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-[#00C9A7] to-[#007a65] text-xl font-bold text-black">
+            <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-[#3fbf8d] to-[#007a65] text-xl font-bold text-black">
               P
             </div>
             <div>
               <p className="text-sm font-semibold text-white">Peterfy</p>
-              <p className="text-xs tracking-wide text-[#00C9A7]">
+              <p className="text-xs tracking-wide text-[#3fbf8d]">
                 Head Coach · Peterfy Performance
               </p>
             </div>

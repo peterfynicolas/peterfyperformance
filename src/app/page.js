@@ -68,8 +68,8 @@ export default function Home() {
               className="leading-[0.92] tracking-tight text-white"
               style={{ fontFamily: "var(--font-bebas)", fontSize: "clamp(3.5rem, 14vw, 8rem)" }}
             >
-              Maximiere deine<br />
-              <span className="text-[#3fbf8d]">Performance.</span>
+              Dein Körper.<br />
+              <span className="text-[#3fbf8d]">Dein Leben.</span>
             </h1>
 
             <p className="mt-6 max-w-xl text-base font-medium leading-relaxed text-zinc-200 sm:text-lg lg:text-2xl">
@@ -94,29 +94,37 @@ export default function Home() {
           <div className="order-2 md:order-1 flex flex-col gap-8">
   
             <div className="flex items-center gap-3">
-              <div className="h-[2px] w-8 bg-[#00C9A7]" />
-              <span className="text-[0.7rem] uppercase tracking-[0.22em] text-[#00C9A7]">
+              <div className="h-[2px] w-8 bg-[#3fbf8d]" />
+              <span className="text-[0.7rem] uppercase tracking-[0.22em] text-[#3fbf8d]">
                 Über mich
               </span>
             </div>
 
             <h2
               className="leading-[0.92] tracking-tight text-white"
-              style={{ fontFamily: "var(--font-bebas)", fontSize: "clamp(3rem, 13vw, 6rem)" }}
+              style={{ fontFamily: "var(--font-bebas)", fontSize: "clamp(1rem, 13vw, 4rem)" }}
             >
               NICOLAS PETERFY<br />
               
             </h2>
+            <span className="text-[1.5rem] font-bold leading-[1.85] text-white"
+            >Vom Leistungsport zur Wissenschaft</span>
   
             <div className="flex flex-col gap-5">
               <p className="text-[1rem] font-light leading-[1.85] text-white/60">
-                Peterfy Performance steht für zielgerichtetes, modernes
-                Athletiktraining — individuell angepasst auf deine sportlichen
-                Anforderungen.
+                Als ehemaliger Jugend-Bundesligaspieler der SpVgg Unterhaching kenne ich die Anforderungen des Leistungssports aus erster Hand. Diese Praxiserfahrung verbinde ich heute mit fundierter wissenschaftlicher Expertise:
               </p>
               <p className="text-[1rem] font-light leading-[1.85] text-white/60">
-                Egal ob du deine Schnelligkeit, Kraft oder Beweglichkeit verbessern
-                willst — hier bekommst du ein System, das funktioniert.
+                Akademischer Hintergrund: Bachelor in Sportwissenschaft (Note 1,0) und aktuelles Masterstudium an der TU München
+              </p>
+              <p className="text-[1rem] font-light leading-[1.85] text-white/60">
+                Stationen: FT-Club München, MFS, FC Bayern München
+              </p>
+              <p className="text-[1rem] font-light leading-[1.85] text-white/60">
+                Ganzheitliches Coaching: Spezialisiert auf funktionelles Training, Rehabilitation und leistungsorientierte Planung für Athleten oder Menschen die mehr aus sich machen wollen
+              </p>
+              <p className="text-[1rem] font-light leading-[1.85] text-white/80">
+                Mein Ziel: Dich mit einem verantwortungsbewussten und wissenschaftlich fundierten Train
               </p>
             </div>
   
@@ -127,9 +135,9 @@ export default function Home() {
           <div className="order-1 md:order-2 flex justify-center md:justify-end">
             <div className="relative">
               {/* Türkiser Akzent hinter dem Bild */}
-              <div className="absolute -bottom-4 -right-4 h-full w-full rounded-2xl border border-[#00C9A7]/20" />
+              <div className="absolute -bottom-4 -right-4 h-full w-full rounded-2xl border border-[#3fbf8d]/20" />
               <Image
-                src="/images/athletik-trainer-beispiel.avif"
+                src="/images/nicolas-peterfy-3.avif"
                 alt="Athlet beim Sprint"
                 sizes="(max-width: 640px) 260px, 280px"
                 width={280}
@@ -148,8 +156,8 @@ export default function Home() {
           {/* Header */}
           <div className="mb-16">
             <div className="flex items-center gap-3 mb-5">
-              <div className="h-[2px] w-8 bg-[#00C9A7]" />
-              <span className="text-[0.7rem] uppercase tracking-[0.22em] text-[#00C9A7]">
+              <div className="h-[2px] w-8 bg-[#3fbf8d]" />
+              <span className="text-[0.7rem] uppercase tracking-[0.22em] text-[#3fbf8d]">
                 Training
               </span>
             </div>
@@ -158,7 +166,7 @@ export default function Home() {
               style={{ fontFamily: "var(--font-bebas)", fontSize: "clamp(3rem, 13vw, 6rem)" }}
             >
               Training<br />
-              <span className="text-[#00C9A7]">Überblick.</span>
+              <span className="text-[#3fbf8d]">Überblick.</span>
             </h2>
           </div>
   

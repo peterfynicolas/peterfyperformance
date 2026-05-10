@@ -25,6 +25,11 @@ body {
   color: var(--foreground);
   font-family: var(--font-dm), sans-serif;
 }
+@media (max-width: 768px) {
+  body {
+    background-image: url("/images/mobile-background-1.avif");
+  }
+}
 
 h1, h2, h3 {
   font-family: var(--font-bebas), sans-serif;

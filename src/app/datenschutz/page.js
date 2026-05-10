@@ -6,8 +6,8 @@ export default function Datenschutz() {
         {/* Header */}
         <div className="mb-16">
           <div className="mb-5 flex items-center gap-3">
-            <div className="h-[2px] w-8 bg-[#00C9A7]" />
-            <span className="text-[0.7rem] uppercase tracking-[0.22em] text-[#00C9A7]">
+            <div className="h-[2px] w-8 bg-[#3fbf8d]" />
+            <span className="text-[0.7rem] uppercase tracking-[0.22em] text-[#3fbf8d]">
               Rechtliches
             </span>
           </div>

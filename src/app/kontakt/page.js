@@ -39,8 +39,8 @@ export default function Kontakt() {
         {/* Header */}
         <div className="mb-16">
           <div className="mb-5 flex items-center gap-3">
-            <div className="h-[2px] w-8 bg-[#00C9A7]" />
-            <span className="text-[0.7rem] uppercase tracking-[0.22em] text-[#00C9A7]">
+            <div className="h-[2px] w-8 bg-[#3fbf8d]" />
+            <span className="text-[0.7rem] uppercase tracking-[0.22em] text-[#3fbf8d]">
               Kontakt
             </span>
           </div>
@@ -49,7 +49,7 @@ export default function Kontakt() {
             style={{ fontFamily: "var(--font-bebas)", fontSize: "clamp(3rem, 13vw, 6rem)" }}
           >
             Lass uns<br />
-            <span className="text-[#00C9A7]">reden.</span>
+            <span className="text-[#3fbf8d]">reden.</span>
           </h1>
           <p className="mt-6 text-[0.95rem] font-light leading-relaxed text-white/40 max-w-sm">
             Kein langer Prozess — schreib uns kurz und wir melden uns
@@ -62,7 +62,7 @@ export default function Kontakt() {
           {/* ── Formular ── */}
           {sent ? (
             <div className="flex flex-col justify-center gap-5 rounded-2xl border border-white/5 bg-[#111] p-10">
-              <div className="flex h-12 w-12 items-center justify-center rounded-xl border border-[#00C9A7]/30 text-[#00C9A7]">
+              <div className="flex h-12 w-12 items-center justify-center rounded-xl border border-[#3fbf8d]/30 text-[#3fbf8d]">
                 <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <polyline points="20 6 9 17 4 12" />
                 </svg>
@@ -72,7 +72,7 @@ export default function Kontakt() {
                 style={{ fontFamily: "var(--font-bebas)", fontSize: "clamp(2rem, 8vw, 3.5rem)" }}
               >
                 Nachricht<br />
-                <span className="text-[#00C9A7]">erhalten.</span>
+                <span className="text-[#3fbf8d]">erhalten.</span>
               </p>
               <p className="text-[0.95rem] font-light leading-relaxed text-white/40">
                 Wir melden uns so schnell wie möglich bei dir. Bis gleich.
@@ -92,7 +92,7 @@ export default function Kontakt() {
                   value={formData.name}
                   onChange={handleChange}
                   placeholder="Max Mustermann"
-                  className="rounded-xl border border-white/10 bg-[#111] px-5 py-4 text-sm text-white placeholder-white/20 outline-none transition-colors focus:border-[#00C9A7]"
+                  className="rounded-xl border border-white/10 bg-[#111] px-5 py-4 text-sm text-white placeholder-white/20 outline-none transition-colors focus:border-[#3fbf8d]"
                 />
               </div>
 
@@ -108,7 +108,7 @@ export default function Kontakt() {
                   value={formData.email}
                   onChange={handleChange}
                   placeholder="max@example.com"
-                  className="rounded-xl border border-white/10 bg-[#111] px-5 py-4 text-sm text-white placeholder-white/20 outline-none transition-colors focus:border-[#00C9A7]"
+                  className="rounded-xl border border-white/10 bg-[#111] px-5 py-4 text-sm text-white placeholder-white/20 outline-none transition-colors focus:border-[#3fbf8d]"
                 />
               </div>
 
@@ -123,7 +123,7 @@ export default function Kontakt() {
                   value={formData.sport}
                   onChange={handleChange}
                   placeholder="z. B. Fußball, Schnelligkeit verbessern …"
-                  className="rounded-xl border border-white/10 bg-[#111] px-5 py-4 text-sm text-white placeholder-white/20 outline-none transition-colors focus:border-[#00C9A7]"
+                  className="rounded-xl border border-white/10 bg-[#111] px-5 py-4 text-sm text-white placeholder-white/20 outline-none transition-colors focus:border-[#3fbf8d]"
                 />
               </div>
 
@@ -139,7 +139,7 @@ export default function Kontakt() {
                   value={formData.nachricht}
                   onChange={handleChange}
                   placeholder="Erzähl uns von deinen Zielen …"
-                  className="rounded-xl border border-white/10 bg-[#111] px-5 py-4 text-sm text-white placeholder-white/20 outline-none transition-colors focus:border-[#00C9A7] resize-none"
+                  className="rounded-xl border border-white/10 bg-[#111] px-5 py-4 text-sm text-white placeholder-white/20 outline-none transition-colors focus:border-[#3fbf8d] resize-none"
                 />
               </div>
 
@@ -165,7 +165,7 @@ export default function Kontakt() {
                   required
                   checked={formData.privacyAccepted}
                   onChange={handleChange}
-                  className="mt-1 h-4 w-4 rounded border border-white/20 bg-[#111] accent-[#00C9A7]"
+                  className="mt-1 h-4 w-4 rounded border border-white/20 bg-[#111] accent-[#3fbf8d]"
                 />
                 <span>
                   Ich habe die Datenschutzerklärung gelesen und stimme der Verarbeitung
@@ -175,7 +175,7 @@ export default function Kontakt() {
 
               <button
                 type="submit"
-                className="group mt-2 inline-flex items-center justify-center gap-3 rounded-xl border border-[#00C9A7] px-8 py-4 text-sm font-semibold uppercase tracking-widest text-[#00C9A7] transition-colors duration-200 hover:bg-[#00C9A7] hover:text-black"
+                className="group mt-2 inline-flex items-center justify-center gap-3 rounded-xl border border-[#3fbf8d] px-8 py-4 text-sm font-semibold uppercase tracking-widest text-[#3fbf8d] transition-colors duration-200 hover:bg-[#3fbf8d] hover:text-black"
               >
                 Nachricht senden
                 <svg
@@ -206,9 +206,9 @@ export default function Kontakt() {
                 href="https://instagram.com/n_peterfy"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group flex items-center gap-4 rounded-2xl border border-white/5 bg-[#111] px-6 py-5 transition-colors hover:border-[#00C9A7]/30"
+                className="group flex items-center gap-4 rounded-2xl border border-white/5 bg-[#111] px-6 py-5 transition-colors hover:border-[#3fbf8d]/30"
               >
-                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-[#00C9A7]/30 text-[#00C9A7]">
+                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-[#3fbf8d]/30 text-[#3fbf8d]">
                   <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
                     <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
                     <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
@@ -219,16 +219,16 @@ export default function Kontakt() {
                   <p className="text-sm font-semibold text-white">Instagram</p>
                   <p className="text-xs text-white/40">@n_peterfy</p>
                 </div>
-                <svg className="w-4 h-4 ml-auto text-white/20 transition-transform group-hover:translate-x-1 group-hover:text-[#00C9A7]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <svg className="w-4 h-4 ml-auto text-white/20 transition-transform group-hover:translate-x-1 group-hover:text-[#3fbf8d]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M5 12h14M12 5l7 7-7 7" />
                 </svg>
               </a>
 
               <a
                 href="mailto:info@peterfyperformance.de"
-                className="group flex items-center gap-4 rounded-2xl border border-white/5 bg-[#111] px-6 py-5 transition-colors hover:border-[#00C9A7]/30"
+                className="group flex items-center gap-4 rounded-2xl border border-white/5 bg-[#111] px-6 py-5 transition-colors hover:border-[#3fbf8d]/30"
               >
-                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-[#00C9A7]/30 text-[#00C9A7]">
+                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-[#3fbf8d]/30 text-[#3fbf8d]">
                   <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
                     <polyline points="22,6 12,13 2,6" />
@@ -238,7 +238,7 @@ export default function Kontakt() {
                   <p className="text-sm font-semibold text-white">E-Mail</p>
                   <p className="text-xs text-white/40">info@peterfyperformance.de</p>
                 </div>
-                <svg className="w-4 h-4 ml-auto text-white/20 transition-transform group-hover:translate-x-1 group-hover:text-[#00C9A7]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <svg className="w-4 h-4 ml-auto text-white/20 transition-transform group-hover:translate-x-1 group-hover:text-[#3fbf8d]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M5 12h14M12 5l7 7-7 7" />
                 </svg>
               </a>
@@ -258,7 +258,7 @@ export default function Kontakt() {
                 { label: "Individuell", desc: "Kein Copy-Paste — jeder Athlet ist anders." },
               ].map((item) => (
                 <div key={item.label} className="flex items-start gap-4">
-                  <div className="mt-1 h-[6px] w-[6px] shrink-0 rounded-full bg-[#00C9A7]" />
+                  <div className="mt-1 h-[6px] w-[6px] shrink-0 rounded-full bg-[#3fbf8d]" />
                   <div>
                     <p className="text-sm font-semibold text-white">{item.label}</p>
                     <p className="text-xs leading-relaxed text-white/40">{item.desc}</p>

@@ -49,7 +49,7 @@ const leistungen = [
       "Messbare Fortschritte",
       "Flexibel in Zeit und Ort",
     ],
-    bild: "/images/athletik-trainer-beispiel.avif",
+    bild: "/images/kraft-einzeltraining.avif",
     alt: "1:1 Athletiktraining",
   },
   {
@@ -65,7 +65,7 @@ const leistungen = [
       "Teamdynamik und Wettkampfgeist",
       "Kosteneffizient",
     ],
-    bild: "/images/athletik-trainer-beispiel.avif",
+    bild: "/images/kraft-camp-gruppe.avif",
     alt: "Gruppentraining Athletik",
   },
   {
@@ -87,18 +87,6 @@ const leistungen = [
 ];
 
 const vereinsvorteile = [
-  {
-    label: "Saisonplanung",
-    desc: "Athletiktraining passend zur Saisonstruktur deines Vereins.",
-    icon: (
-      <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-        <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
-        <line x1="16" y1="2" x2="16" y2="6" />
-        <line x1="8" y1="2" x2="8" y2="6" />
-        <line x1="3" y1="10" x2="21" y2="10" />
-      </svg>
-    ),
-  },
   {
     label: "Nachwuchsförderung",
     desc: "Gezielte Athletikentwicklung für U-Mannschaften und Talente.",
@@ -134,6 +122,45 @@ const vereinsvorteile = [
   },
 ];
 
+const parkAngebote = [
+  {
+    label: "1:1 Personal Training",
+    desc: "Individuell auf dich zugeschnitten — dein Ziel, dein Tempo, volle Aufmerksamkeit.",
+    icon: (
+      <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+        <circle cx="12" cy="7" r="4" />
+      </svg>
+    ),
+  },
+  {
+    label: "Gruppentraining",
+    desc: "Gemeinsam auspowern mit Gleichgesinnten — Motivation inklusive.",
+    icon: (
+      <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+        <circle cx="9" cy="7" r="4" />
+        <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+        <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+      </svg>
+    ),
+  },
+  {
+    label: "Hundefreundlich",
+    desc: "Dein vierbeiniger Partner ist herzlich willkommen und darf gerne dabei sein.",
+    icon: (
+      <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M10 5.172C10 3.782 8.423 2.679 6.5 3c-2.823.47-4.113 6.006-4 7 .08.703 1.725 1.722 3.656 1 1.261-.472 1.96-1.45 2.344-2.5" />
+        <path d="M14.267 5.172c0-1.39 1.577-2.493 3.5-2.172 2.823.47 4.113 6.006 4 7-.08.703-1.725 1.722-3.656 1-1.261-.472-1.96-1.45-2.344-2.5" />
+        <path d="M8 14v.5" /><path d="M16 14v.5" />
+        <path d="M11.25 16.25h1.5L12 17l-.75-.75z" />
+        <path d="M4.42 11.247A13.152 13.152 0 0 0 4 14.556C4 18.728 7.582 21 12 21s8-2.272 8-6.444c0-1.061-.162-2.2-.493-3.309m-9.243-6.082A8.801 8.801 0 0 1 12 5c.78 0 1.5.108 2.161.306" />
+      </svg>
+    ),
+  },
+];
+
+
 function LeistungSection({ item, index }) {
   const isEven = index % 2 === 0;
 
@@ -145,8 +172,8 @@ function LeistungSection({ item, index }) {
           {/* Text */}
           <div className="flex flex-col gap-8">
             <div className="flex items-center gap-3">
-              <div className="h-[2px] w-8 bg-[#00C9A7]" />
-              <span className="text-[0.7rem] uppercase tracking-[0.22em] text-[#00C9A7]">
+              <div className="h-[2px] w-8 bg-[#3fbf8d]" />
+              <span className="text-[0.7rem] uppercase tracking-[0.22em] text-[#3fbf8d]">
                 {item.label}
               </span>
             </div>
@@ -157,7 +184,7 @@ function LeistungSection({ item, index }) {
                 style={{ fontFamily: "var(--font-bebas)", fontSize: "clamp(3rem, 12vw, 5.5rem)" }}
               >
                 {item.headline}<br />
-                <span className="text-[#00C9A7]">{item.label}.</span>
+                <span className="text-[#3fbf8d]">{item.label}.</span>
               </h2>
               <p className="mt-4 text-[0.95rem] font-light leading-relaxed text-white/40">
                 {item.sub}
@@ -168,25 +195,25 @@ function LeistungSection({ item, index }) {
               {item.beschreibung}
             </p>
 
-            {/* Punkte */}
             <ul className="flex flex-col gap-3">
               {item.punkte.map((p) => (
                 <li key={p} className="flex items-center gap-3">
-                  <div className="h-[5px] w-[5px] shrink-0 rounded-full bg-[#00C9A7]" />
+                  <div className="h-[5px] w-[5px] shrink-0 rounded-full bg-[#3fbf8d]" />
                   <span className="text-[0.9rem] font-light text-white/60">{p}</span>
                 </li>
               ))}
             </ul>
-            <CTAButton label="Gruppentraining anfragen" href="/kontakt"/>
+            {/* Desktop: Button im Text-Block */}
+            <div className="hidden md:block">
+              <CTAButton label="Training anfragen" href="/kontakt" />
+            </div>
           </div>
 
-          {/* Rundes Bild */}
-          <div className={`flex ${isEven ? "justify-center md:justify-end" : "justify-center md:justify-start"}`}>
+          {/* Rundes Bild + Mobile Button darunter */}
+          <div className={`flex flex-col items-center gap-14 ${isEven ? "md:items-end" : "md:items-start"}`}>
             <div className="relative">
-              {/* Türkiser Akzentring */}
-              <div className="absolute inset-0 rounded-full border border-[#00C9A7]/20 scale-110" />
-              {/* Zweiter Ring */}
-              <div className="absolute inset-0 rounded-full border border-[#00C9A7]/10 scale-125" />
+              <div className="absolute inset-0 rounded-full border border-[#3fbf8d]/20 scale-110" />
+              <div className="absolute inset-0 rounded-full border border-[#3fbf8d]/10 scale-125" />
               <div className="relative h-[300px] w-[300px] overflow-hidden rounded-full border border-white/5 md:h-[360px] md:w-[360px]">
                 <Image
                   src={item.bild}
@@ -196,6 +223,10 @@ function LeistungSection({ item, index }) {
                   className="rounded-full"
                 />
               </div>
+            </div>
+            {/* Mobile: Button unter dem Bild */}
+            <div className="md:hidden w-full flex justify-center">
+              <CTAButton label="Training anfragen" href="/kontakt" />
             </div>
           </div>
 
@@ -213,8 +244,8 @@ export default function Leistungen() {
       <section className="px-5 pt-28 pb-16 md:px-12 md:pt-36 md:pb-24">
         <div className="mx-auto max-w-6xl">
           <div className="mb-5 flex items-center gap-3">
-            <div className="h-[2px] w-8 bg-[#00C9A7]" />
-            <span className="text-[0.7rem] uppercase tracking-[0.22em] text-[#00C9A7]">
+            <div className="h-[2px] w-8 bg-[#3fbf8d]" />
+            <span className="text-[0.7rem] uppercase tracking-[0.22em] text-[#3fbf8d]">
               Leistungen
             </span>
           </div>
@@ -224,7 +255,7 @@ export default function Leistungen() {
               style={{ fontFamily: "var(--font-bebas)", fontSize: "clamp(3.5rem, 14vw, 7rem)" }}
             >
               Was wir<br />
-              <span className="text-[#00C9A7]">anbieten.</span>
+              <span className="text-[#3fbf8d]">anbieten.</span>
             </h1>
             <p className="text-[0.95rem] font-light leading-relaxed text-white/40 md:max-w-xs">
               Drei Formate. Ein Ziel —<br />
@@ -254,8 +285,8 @@ export default function Leistungen() {
 
           <div className="mb-14">
             <div className="mb-5 flex items-center gap-3">
-              <div className="h-[2px] w-8 bg-[#00C9A7]" />
-              <span className="text-[0.7rem] uppercase tracking-[0.22em] text-[#00C9A7]">
+              <div className="h-[2px] w-8 bg-[#3fbf8d]" />
+              <span className="text-[0.7rem] uppercase tracking-[0.22em] text-[#3fbf8d]">
                 Für Vereine
               </span>
             </div>
@@ -265,7 +296,7 @@ export default function Leistungen() {
                 style={{ fontFamily: "var(--font-bebas)", fontSize: "clamp(3rem, 12vw, 5.5rem)" }}
               >
                 Athletik für<br />
-                <span className="text-[#00C9A7]">deinen Verein.</span>
+                <span className="text-[#3fbf8d]">deinen Verein.</span>
               </h2>
               <p className="text-[0.95rem] font-light leading-relaxed text-white/40 md:max-w-xs">
                 Langfristige Kooperationen mit Vereinen im Nachwuchs- und Leistungsbereich.
@@ -279,8 +310,8 @@ export default function Leistungen() {
                 key={v.label}
                 className="relative flex flex-col gap-5 rounded-2xl border border-white/5 bg-[#111] p-7 overflow-hidden"
               >
-                <div className="absolute left-0 top-0 h-full w-[3px] rounded-l-2xl bg-gradient-to-b from-[#00C9A7] to-transparent" />
-                <div className="flex h-10 w-10 items-center justify-center rounded-xl border border-[#00C9A7]/30 text-[#00C9A7]">
+                <div className="absolute left-0 top-0 h-full w-[3px] rounded-l-2xl bg-gradient-to-b from-[#3fbf8d] to-transparent" />
+                <div className="flex h-10 w-10 items-center justify-center rounded-xl border border-[#3fbf8d]/30 text-[#3fbf8d]">
                   {v.icon}
                 </div>
                 <div>
@@ -292,6 +323,195 @@ export default function Leistungen() {
           </div>
 
           <CTAButton label="Vereinsanfrage stellen" href="/kontakt" />
+
+        </div>
+      </section>
+
+      {/* ── Park Training ── */}
+      <div className="px-5 md:px-12">
+        <div className="mx-auto max-w-6xl border-t border-white/5" />
+      </div>
+
+      <section className="px-5 py-24 md:px-12 md:py-36">
+        <div className="mx-auto max-w-6xl grid gap-16 md:grid-cols-2 md:gap-24 items-center">
+
+          {/* Text */}
+          <div className="flex flex-col gap-10">
+            <div>
+              <div className="mb-5 flex items-center gap-3">
+                <div className="h-[2px] w-8 bg-[#3fbf8d]" />
+                <span className="text-[0.7rem] uppercase tracking-[0.22em] text-[#3fbf8d]">
+                  Training im Freien
+                </span>
+              </div>
+              <h2
+                className="leading-[0.92] tracking-tight text-white mb-6"
+                style={{ fontFamily: "var(--font-bebas)", fontSize: "clamp(2.5rem, 10vw, 5rem)" }}
+              >
+                Fit an der<br />
+                <span className="text-[#3fbf8d]">frischen Luft.</span>
+              </h2>
+              <p className="text-[1rem] font-light leading-[1.85] text-white/60">
+                Hol dir die Extraportion Motivation unter freiem Himmel. Egal, ob du an deinen Zielen arbeiten oder dich in der Gruppe auspowern willst — ich begleite dich dabei.
+              </p>
+            </div>
+
+            {/* Angebote */}
+            <div className="flex flex-col gap-4">
+              {parkAngebote.map((a) => (
+                <div
+                  key={a.label}
+                  className="relative flex items-start gap-5 rounded-2xl border border-white/5 bg-[#111] p-6 overflow-hidden"
+                >
+                  <div className="absolute left-0 top-0 h-full w-[3px] rounded-l-2xl bg-gradient-to-b from-[#3fbf8d] to-transparent" />
+                  <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-xl border border-[#3fbf8d]/30 text-[#3fbf8d]">
+                    {a.icon}
+                  </div>
+                  <div>
+                    <p className="text-sm font-semibold text-white mb-1">{a.label}</p>
+                    <p className="text-[0.85rem] font-light leading-relaxed text-white/40">{a.desc}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            <CTAButton label="Park Training anfragen" href="/kontakt" />
+          </div>
+
+          {/* Visuelles Element */}
+          <div className="flex justify-center md:justify-end">
+            <div className="relative">
+              {/* Dekorativer Hintergrundkreis */}
+              <div className="absolute inset-0 rounded-full bg-[#3fbf8d]/5 scale-110" />
+              <div className="absolute inset-0 rounded-full border border-[#3fbf8d]/20 scale-110" />
+              <div className="absolute inset-0 rounded-full border border-[#3fbf8d]/10 scale-125" />
+              <div className="relative h-[300px] w-[300px] overflow-hidden rounded-full border border-white/5 md:h-[360px] md:w-[360px]">
+                <Image
+                  src="/images/hundetraining-leistung.avif"
+                  alt="Training im Park — Fit an der frischen Luft"
+                  fill
+                  style={{ objectFit: "cover" }}
+                  className="rounded-full"
+                />
+              </div>
+
+              {/* Floating Badge */}
+              <div className="absolute -bottom-4 -left-4 flex items-center gap-2 rounded-2xl border border-[#3fbf8d]/20 bg-[#111] px-4 py-3">
+                <svg className="w-4 h-4 text-[#3fbf8d]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                </svg>
+                <span className="text-[0.75rem] font-semibold text-white/70">Hundefreundlich</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+      <div className="px-5 md:px-12">
+        <div className="mx-auto max-w-6xl border-t border-white/5" />
+      </div>
+
+      <section className="px-5 py-24 md:px-12 md:py-36">
+        <div className="mx-auto max-w-6xl">
+
+          <div className="mb-16">
+            <div className="mb-5 flex items-center gap-3">
+              <div className="h-[2px] w-8 bg-[#3fbf8d]" />
+              <span className="text-[0.7rem] uppercase tracking-[0.22em] text-[#3fbf8d]">
+                Unsere Standorte
+              </span>
+            </div>
+            <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
+              <h2
+                className="leading-[0.92] tracking-tight text-white"
+                style={{ fontFamily: "var(--font-bebas)", fontSize: "clamp(3rem, 12vw, 5.5rem)" }}
+              >
+                Wo wir<br />
+                <span className="text-[#3fbf8d]">trainieren.</span>
+              </h2>
+              <p className="text-[0.95rem] font-light leading-relaxed text-white/40 md:max-w-xs">
+                Vier Standorte in der Region —<br />
+                immer nah an dir.
+              </p>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-4">
+            {[
+              {
+                label: "Standort 1",
+                ort: "PRIME TIME fitness",
+                beschreibung: "DUMMY-TEXT-LALA",
+                href: "https://maps.google.com",
+              },
+              {
+                label: "Standort 2",
+                ort: "Physio am Viktualienmarkt",
+                beschreibung: "DUMMY-TEXT-LALA",
+                href: "https://maps.google.com",
+              },
+              {
+                label: "Standort 3",
+                ort: "CrossFit Munich",
+                beschreibung: "DUMMY-TEXT-LALA",
+                href: "https://maps.google.com",
+              },
+              {
+                label: "Standort 4",
+                ort: "Online",
+                beschreibung: "DUMMY-TEXT-LALA",
+                href: "https://maps.google.com",
+              },
+            ].map((s, i) => (
+              <div key={s.label} className="flex flex-col items-center text-center gap-6">
+
+                {/* Kreis-Bild */}
+                <div className="relative">
+                  <div className="absolute inset-0 rounded-full border border-[#3fbf8d]/20 scale-110" />
+                  <div className="absolute inset-0 rounded-full border border-[#3fbf8d]/10 scale-125" />
+                  <div className="relative h-[200px] w-[200px] overflow-hidden rounded-full border border-white/5 bg-[#111]">
+                    <Image
+                      src={`/images/standort-dummy-${i + 1}.avif`}
+                      alt={s.label}
+                      fill
+                      style={{ objectFit: "cover" }}
+                      className="rounded-full"
+                    />
+                  </div>
+                </div>
+
+                {/* Text */}
+                <div className="flex flex-col gap-2">
+                  <span className="text-[0.65rem] uppercase tracking-[0.2em] text-[#3fbf8d]">
+                    {s.label}
+                  </span>
+                  <h3
+                    className="text-white leading-tight"
+                    style={{ fontFamily: "var(--font-bebas)", fontSize: "clamp(1.6rem, 5vw, 2rem)" }}
+                  >
+                    {s.ort}
+                  </h3>
+                  <p className="text-[0.85rem] font-light leading-relaxed text-white/40">
+                    {s.beschreibung}
+                  </p>
+                </div>
+
+                {/* Link */}
+                <a
+                  href={s.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-[0.8rem] font-light text-[#3fbf8d] hover:text-white transition-colors duration-200"
+                >
+                  <span>Standort ansehen</span>
+                  <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M7 17L17 7M17 7H7M17 7v10" />
+                  </svg>
+                </a>
+
+              </div>
+            ))}
+          </div>
 
         </div>
       </section>

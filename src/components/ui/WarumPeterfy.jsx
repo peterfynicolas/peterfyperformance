@@ -44,8 +44,8 @@ export default function WarumPeterfy() {
         {/* Header */}
         <div className="mb-14">
           <div className="mb-5 flex items-center gap-3">
-            <div className="h-[2px] w-8 bg-[#00C9A7]" />
-            <span className="text-[0.7rem] uppercase tracking-[0.22em] text-[#00C9A7]">
+            <div className="h-[2px] w-8 bg-[#3fbf8d]" />
+            <span className="text-[0.7rem] uppercase tracking-[0.22em] text-[#3fbf8d]">
               Warum ich
             </span>
           </div>
@@ -54,7 +54,7 @@ export default function WarumPeterfy() {
             style={{ fontFamily: "var(--font-bebas)", fontSize: "clamp(3rem, 13vw, 6rem)" }}
           >
             Warum Peterfy<br />
-            <span className="text-[#00C9A7]">Performance.</span>
+            <span className="text-[#3fbf8d]">Performance.</span>
           </h2>
         </div>
 
@@ -65,7 +65,7 @@ export default function WarumPeterfy() {
               key={g.label}
               className="flex flex-col gap-5 rounded-2xl border border-white/10 bg-black/40 backdrop-blur-sm p-6"
             >
-              <div className="flex h-10 w-10 items-center justify-center rounded-xl border border-[#00C9A7]/30 text-[#00C9A7]">
+              <div className="flex h-10 w-10 items-center justify-center rounded-xl border border-[#3fbf8d]/30 text-[#3fbf8d]">
                 {g.icon}
               </div>
               <p className="text-[0.95rem] font-medium leading-snug text-white">

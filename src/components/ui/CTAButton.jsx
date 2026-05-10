@@ -4,13 +4,13 @@ export default function CTAButton({
   variant = "outline", // "outline" | "filled"
 }) {
   const baseStyles =
-    "group inline-flex items-center gap-3 self-start px-8 py-4 rounded-xl text-sm font-semibold uppercase tracking-widest transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-[#00C9A7] focus:ring-offset-2";
+    "group inline-flex items-center gap-3 self-start px-8 py-4 rounded-xl text-sm font-semibold uppercase tracking-widest transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-[#3fbf8d] focus:ring-offset-2";
 
   const variants = {
     outline:
-      "border border-[#00C9A7] text-[#00C9A7] hover:bg-[#00C9A7] hover:text-black",
+      "border border-[#3fbf8d] text-[#3fbf8d] hover:bg-[#3fbf8d] hover:text-black",
     filled:
-      "bg-[#00C9A7] text-black hover:opacity-90",
+      "bg-[#3fbf8d] text-black hover:opacity-90",
   };
 
   return (

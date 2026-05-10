@@ -18,7 +18,7 @@ export default function Navbar() {
 
   const linkClass = (href) =>
     `text-sm uppercase tracking-[0.15em] transition-colors ${
-      pathname === href ? "text-[#00C9A7]" : "text-white/70 hover:text-white"
+      pathname === href ? "text-[#3fbf8d]" : "text-white/70 hover:text-white"
     }`;
 
   return (
@@ -29,11 +29,11 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" className="md:absolute md:left-0">
             <span
-              className="text-xl tracking-tight text-white hover:text-[#00C9A7] transition-colors"
+              className="text-xl tracking-tight text-white hover:text-[#3fbf8d] transition-colors"
               style={{ fontFamily: "var(--font-bebas)", letterSpacing: "0.05em" }}
             >
               Peterfy{" "}
-              <span className="text-[#00C9A7]">Performance</span>
+              <span className="text-[#3fbf8d]">Performance</span>
             </span>
           </Link>
 
@@ -67,7 +67,7 @@ export default function Navbar() {
               href="https://instagram.com/n_peterfy"
               target="_blank"
               rel="noopener noreferrer"
-              className="absolute right-0 top-1/2 hidden -translate-y-1/2 text-white/50 transition-colors hover:text-[#00C9A7] md:block"
+              className="absolute right-0 top-1/2 hidden -translate-y-1/2 text-white/50 transition-colors hover:text-[#3fbf8d] md:block"
               aria-label="Instagram"
             >
               <InstagramLogo size={22} />
@@ -114,7 +114,7 @@ export default function Navbar() {
                 href={link.href}
                 onClick={() => setIsOpen(false)}
                 className={`transition-colors ${
-                  pathname === link.href ? "text-[#00C9A7]" : "text-white/70 hover:text-white"
+                  pathname === link.href ? "text-[#3fbf8d]" : "text-white/70 hover:text-white"
                 }`}
                 style={{
                   fontFamily: "var(--font-bebas)",
@@ -134,7 +134,7 @@ export default function Navbar() {
             href="https://instagram.com/n_peterfy"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-white/30 hover:text-[#00C9A7] transition-colors"
+            className="text-white/30 hover:text-[#3fbf8d] transition-colors"
             aria-label="Instagram"
           >
             <InstagramLogo size={28} />

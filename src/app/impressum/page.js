@@ -12,8 +12,8 @@ export default function Impressum() {
       <div className="mx-auto max-w-4xl">
         <div className="mb-16">
           <div className="mb-5 flex items-center gap-3">
-            <div className="h-[2px] w-8 bg-[#00C9A7]" />
-            <span className="text-[0.7rem] uppercase tracking-[0.22em] text-[#00C9A7]">
+            <div className="h-[2px] w-8 bg-[#3fbf8d]" />
+            <span className="text-[0.7rem] uppercase tracking-[0.22em] text-[#3fbf8d]">
               Rechtliches
             </span>
           </div>
@@ -38,7 +38,7 @@ export default function Impressum() {
                 fontSize: "clamp(2rem, 7vw, 3rem)",
               }}
             >
-              Angaben gemäß <span className="text-[#00C9A7]">§ 5 TMG</span>
+              Angaben gemäß <span className="text-[#3fbf8d]">§ 5 TMG</span>
             </h2>
 
             <div className="space-y-5 text-[1rem] font-light leading-[1.85] text-white/60">
@@ -96,7 +96,7 @@ export default function Impressum() {
                 fontSize: "clamp(2rem, 7vw, 3rem)",
               }}
             >
-              Haftung für <span className="text-[#00C9A7]">Inhalte</span>
+              Haftung für <span className="text-[#3fbf8d]">Inhalte</span>
             </h2>
 
             <p className="max-w-3xl text-[1rem] font-light leading-[1.85] text-white/60">
@@ -116,7 +116,7 @@ export default function Impressum() {
                 fontSize: "clamp(2rem, 7vw, 3rem)",
               }}
             >
-              Haftung für <span className="text-[#00C9A7]">Links</span>
+              Haftung für <span className="text-[#3fbf8d]">Links</span>
             </h2>
 
             <p className="max-w-3xl text-[1rem] font-light leading-[1.85] text-white/60">
@@ -134,7 +134,7 @@ export default function Impressum() {
                 fontSize: "clamp(2rem, 7vw, 3rem)",
               }}
             >
-              Urheber<span className="text-[#00C9A7]">recht</span>
+              Urheber<span className="text-[#3fbf8d]">recht</span>
             </h2>
 
             <p className="max-w-3xl text-[1rem] font-light leading-[1.85] text-white/60">
@@ -153,7 +153,7 @@ export default function Impressum() {
                 fontSize: "clamp(2rem, 7vw, 3rem)",
               }}
             >
-              Streit<span className="text-[#00C9A7]">schlichtung</span>
+              Streit<span className="text-[#3fbf8d]">schlichtung</span>
             </h2>
 
             <div className="space-y-5 max-w-3xl text-[1rem] font-light leading-[1.85] text-white/60">
@@ -164,7 +164,7 @@ export default function Impressum() {
                   href="https://ec.europa.eu/consumers/odr/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-white underline underline-offset-4 transition hover:text-[#00C9A7]"
+                  className="text-white underline underline-offset-4 transition hover:text-[#3fbf8d]"
                 >
                   https://ec.europa.eu/consumers/odr/
                 </a>
