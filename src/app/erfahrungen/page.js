@@ -1,8 +1,8 @@
 import LastConversion from "@/components/ui/LastConversion";
-import Testimonials from "@/components/ui/Testimonials2";
+import Testimonials from "@/components/ui/Testimonials1";
 
 export const metadata = {
-  title: "Erfahrungen & Ergebnisse | Athletiktraining Wirkung & Feedback",
+  title: "Erfahrungen | Athletiktraining Ergebnisse & Feedback",
   description:
     "Erfahrungen aus dem Athletiktraining: Feedback von Sportlern und Teams zu Leistung, Schnelligkeit und Verletzungsprävention.",
 

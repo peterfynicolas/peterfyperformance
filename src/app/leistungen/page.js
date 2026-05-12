@@ -2,9 +2,11 @@ import CTAButton from "@/components/ui/CTAButton";
 import LastConversion from "@/components/ui/LastConversion";
 import Image from "next/image";
 import Link from "next/link";
+import JsonLd from "@/components/JsonLd";
+import { servicesSchema } from "@/lib/schema";
 
 export const metadata = {
-  title: "Leistungen | Athletiktraining für Leistung, Schnelligkeit & Prävention",
+  title: "Leistungen | Athletiktraining - 1:1, Gruppen & Camps",
   description:
     "1:1 Training, Gruppentraining und Athletik Camps: Individuelle Programme für maximale Leistung, messbare Fortschritte und nachhaltige Entwicklung im Sport.",
 
@@ -241,6 +243,7 @@ function LeistungSection({ item, index }) {
 export default function Leistungen() {
   return (
     <main className="bg-[#0a0a0a] min-h-screen">
+      <JsonLd data={servicesSchema} />
 
       {/* ── Header ── */}
       <section className="px-5 pt-28 pb-16 md:px-12 md:pt-36 md:pb-24">

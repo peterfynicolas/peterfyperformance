@@ -2,9 +2,9 @@ import LastConversion from "@/components/ui/LastConversion";
 import Image from "next/image";
 
 export const metadata = {
-  title: "Über mich | Athletiktrainer für Performance & nachhaltige Entwicklung",
+  title: "Über mich | Athletiktrainer für Performance & Entwicklung",
   description:
-    "Erfahre mehr über meinen Ansatz als Athletiktrainer: wissenschaftlich fundiertes Training für Leistung, Belastbarkeit und langfristige Entwicklung von Sportlern.",
+    "Wissenschaftlich fundiertes Athletiktraining für Leistung, Belastbarkeit und langfristige Entwicklung von Sportlern - erfahre mehr über meinen Ansatz.",
 
   keywords:
     "Athletiktrainer Profil, Personal Trainer Sport Erfahrung, Athletiktraining Coach Deutschland, Sport Performance Coach, Trainer Philosophie Athletiktraining, Strength and Conditioning Coach, Coaching Ansatz Sport",

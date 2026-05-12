@@ -8,7 +8,7 @@ import WarumPeterfy from "@/components/ui/WarumPeterfy";
 import CTAButton from "@/components/ui/CTAButton";
 
 export const metadata = {
-  title: "Athletiktrainer für Performance & Prävention | Individuelles Training",
+  title: "Peterfy Performance - Dein Athletiktrainer München",
   description:
     "Individuelles Athletiktraining für mehr Leistung, Schnelligkeit und Verletzungsprävention. Für Sportler & Teams - strukturiert, effektiv und zielorientiert.",
 
