@@ -1,17 +1,21 @@
 "use client";
 import { useEffect, useRef } from "react";
 
-const images = [
-  "/images/hero_image_version_0001.avif",
-  "/images/hero_image_version_0001.avif",
-  "/images/hero_image_version_0001.avif",
-  "/images/hero_image_version_0001.avif",
-  "/images/hero_image_version_0001.avif",
-  "/images/hero_image_version_0001.avif",
-  "/images/hero_image_version_0001.avif",
+const media = [
+  "/images/image-003 (7).avif",
+  "/images/image-002.avif",
+  "/images/image-003 (6).avif",
+  "/images/vid_001.mp4",
 ];
 
-const doubled = [...images, ...images];
+const VIDEO_EXTENSIONS = ["mp4", "webm", "ogg", "mov"];
+
+function isVideo(src) {
+  const ext = src.split(".").pop().toLowerCase();
+  return VIDEO_EXTENSIONS.includes(ext);
+}
+
+const doubled = [...media, ...media];
 
 export default function AutomaticGalerie() {
   const trackRef = useRef(null);
@@ -39,9 +43,7 @@ export default function AutomaticGalerie() {
 
     function wrapPosition(pos) {
       const half = getHalfWidth();
-      // Nach links scrollen (negativ): zurücksetzen wenn halbe Breite erreicht
       if (pos <= -half) return pos + half;
-      // Nach rechts scrollen (positiv): zurücksetzen wenn 0 überschritten
       if (pos > 0) return pos - half;
       return pos;
     }
@@ -150,12 +152,23 @@ export default function AutomaticGalerie() {
             key={i}
             className="w-[300px] h-[200px] md:w-[500px] md:h-[350px] flex-shrink-0 rounded overflow-hidden"
           >
-            <img
-              src={src}
-              alt={`Galerie Bild ${i + 1}`}
-              className="w-full h-full object-cover pointer-events-none"
-              draggable={false}
-            />
+            {isVideo(src) ? (
+              <video
+                src={src}
+                autoPlay
+                muted
+                loop
+                playsInline
+                className="w-full h-full object-cover pointer-events-none"
+              />
+            ) : (
+              <img
+                src={src}
+                alt={`Galerie Bild ${i + 1}`}
+                className="w-full h-full object-cover pointer-events-none"
+                draggable={false}
+              />
+            )}
           </div>
         ))}
       </div>

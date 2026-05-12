@@ -16,6 +16,10 @@ const dm = DM_Sans({
   variable: "--font-dm",
 });
 
+export const metadata = {
+  metadataBase: new URL("https://www.peterfy-performance.de"),
+};
+
 export default function RootLayout({ children }) {
   return (
     <html lang="de-DE" suppressHydrationWarning>

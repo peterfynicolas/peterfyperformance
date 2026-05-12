@@ -20,14 +20,14 @@ export const metadata = {
     follow: true,
   },
 
-  metadataBase: new URL("https://www.deine-domain.de"),
+  metadataBase: new URL("https://www.peterfy-performance.de"),
 
   openGraph: {
     title: "Athletiktraining für maximale Leistung & weniger Verletzungen",
     description:
       "Strukturiertes Athletiktraining für Sportler und Teams - mehr Leistung, bessere Belastbarkeit und nachhaltige Entwicklung.",
-    url: "https://www.deine-domain.de/",
-    siteName: "Dein Name Athletiktraining",
+    url: "https://www.peterfy-performance.de/",
+    siteName: "Petery Performance",
     type: "website",
     locale: "de_DE",
     images: ["/og-image.jpg"],
@@ -123,26 +123,31 @@ export default function Home() {
               <p className="text-[1rem] font-light leading-[1.85] text-white/60">
                 Ganzheitliches Coaching: Spezialisiert auf funktionelles Training, Rehabilitation und leistungsorientierte Planung für Athleten oder Menschen die mehr aus sich machen wollen
               </p>
-              <p className="text-[1rem] font-light leading-[1.85] text-white/80">
-                Mein Ziel: Dich mit einem verantwortungsbewussten und wissenschaftlich fundierten Train
+              
+            </div>
+            <div style={{ borderLeft: "2px solid #3fbf8d" }} className="pl-4">
+              <p className="text-[1rem] uppercase tracking-[0.15em] text-[#3fbf8d] mb-1.5">
+                Mein Ziel
+              </p>
+              <p className="text-[1.2rem] font-light leading-[1.75] text-white/75">
+                Dich mit einem verantwortungsbewussten und wissenschaftlich fundierten Training dabei zu unterstützen, deine maximale Leistungsfähigkeit sicher und nachhaltig zu erreichen.
               </p>
             </div>
+            
   
             <CTAButton label="MEHR ÜBER MICH" href="/ueber-mich"/>
           </div>
   
           {/* Rechte Seite */}
           <div className="order-1 md:order-2 flex justify-center md:justify-end">
-            <div className="relative">
-              {/* Türkiser Akzent hinter dem Bild */}
-              <div className="absolute -bottom-4 -right-4 h-full w-full rounded-2xl border border-[#3fbf8d]/20" />
+            <div className="rounded-2xl border border-[#3fbf8d]/20 w-[260px] sm:w-[280px]">
               <Image
-                src="/images/nicolas-peterfy-3 (1).png"
+                src="/images/nicolas-peterfy-5.avif"
                 alt="Athlet beim Sprint"
                 sizes="(max-width: 640px) 260px, 280px"
                 width={280}
                 height={420}
-                className="rounded-2xl object-cover w-[260px] sm:w-[280px] h-auto"
+                className="rounded-2xl object-cover w-full h-auto block"
               />
             </div>
           </div>
@@ -184,12 +189,13 @@ export default function Home() {
               <CTAButton label="Mehr über Leistungen" href="/leistungen" />
             </div>
   
-            {/* Bild / Video Placeholder */}
             <div className="flex-1 w-full aspect-video rounded-2xl bg-[#111] border border-white/5 overflow-hidden relative">
-            <Image
-                src="/images/besp-leistungen.avif"
+              <Image
+                src="/images/training-athletik-übersicht.avif"
                 alt="Athlet beim Sprint"
                 fill
+                sizes="(max-width: 768px) 100vw, 50vw"
+                priority
                 className="object-cover"
               />
             </div>

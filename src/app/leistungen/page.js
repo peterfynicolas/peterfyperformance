@@ -15,7 +15,7 @@ export const metadata = {
     title: "Athletiktraining Leistungen | Individuell, strukturiert, effektiv",
     description:
       "Vom 1:1 Training bis zum Camp: Finde das passende Athletiktraining für deine Ziele und erreiche messbare Fortschritte.",
-    url: "https://www.deine-domain.de/leistungen",
+    url: "https://www.peterfy-performance/leistungen",
     siteName: "Peterfy Performance",
     type: "website",
     locale: "de_DE",
@@ -81,7 +81,7 @@ const leistungen = [
       "Mehrere Tage, klare Struktur",
       "Für Einzel- und Gruppenanmeldung",
     ],
-    bild: "/images/athletik-trainer-beispiel.avif",
+    bild: "/images/training-athletik-intensiv-camps-muenchen.avif",
     alt: "Athletik Camp Training",
   },
 ];
@@ -219,6 +219,8 @@ function LeistungSection({ item, index }) {
                   src={item.bild}
                   alt={item.alt}
                   fill
+                  sizes="(max-width: 768px) 300px, 360px"
+                  priority={index === 0}
                   style={{ objectFit: "cover" }}
                   className="rounded-full"
                 />
@@ -246,7 +248,7 @@ export default function Leistungen() {
           <div className="mb-5 flex items-center gap-3">
             <div className="h-[2px] w-8 bg-[#3fbf8d]" />
             <span className="text-[0.7rem] uppercase tracking-[0.22em] text-[#3fbf8d]">
-              Leistungen
+              Individuelles Training für jedes Ziel
             </span>
           </div>
           <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
@@ -254,11 +256,11 @@ export default function Leistungen() {
               className="leading-[0.92] tracking-tight text-white"
               style={{ fontFamily: "var(--font-bebas)", fontSize: "clamp(3.5rem, 14vw, 7rem)" }}
             >
-              Was wir<br />
-              <span className="text-[#3fbf8d]">anbieten.</span>
+              Trainings /<br />
+              <span className="text-[#3fbf8d]">Leistungen.</span>
             </h1>
             <p className="text-[0.95rem] font-light leading-relaxed text-white/40 md:max-w-xs">
-              Drei Formate. Ein Ziel —<br />
+              Unsere Formate. Ein Ziel —<br />
               deine maximale athletische Leistung.
             </p>
           </div>
@@ -281,48 +283,67 @@ export default function Leistungen() {
       </div>
 
       <section className="px-5 py-24 md:px-12 md:py-36">
-        <div className="mx-auto max-w-6xl">
+        <div className="mx-auto max-w-6xl grid gap-16 md:grid-cols-2 md:gap-24 items-center">
 
-          <div className="mb-14">
-            <div className="mb-5 flex items-center gap-3">
-              <div className="h-[2px] w-8 bg-[#3fbf8d]" />
-              <span className="text-[0.7rem] uppercase tracking-[0.22em] text-[#3fbf8d]">
-                Für Vereine
-              </span>
-            </div>
-            <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
+          {/* Text + Cards */}
+          <div className="flex flex-col gap-10">
+            <div className="mb-4">
+              <div className="mb-5 flex items-center gap-3">
+                <div className="h-[2px] w-8 bg-[#3fbf8d]" />
+                <span className="text-[0.7rem] uppercase tracking-[0.22em] text-[#3fbf8d]">
+                  Für Vereine
+                </span>
+              </div>
               <h2
-                className="leading-[0.92] tracking-tight text-white"
+                className="leading-[0.92] tracking-tight text-white mb-4"
                 style={{ fontFamily: "var(--font-bebas)", fontSize: "clamp(3rem, 12vw, 5.5rem)" }}
               >
                 Athletik für<br />
                 <span className="text-[#3fbf8d]">deinen Verein.</span>
               </h2>
-              <p className="text-[0.95rem] font-light leading-relaxed text-white/40 md:max-w-xs">
+              <p className="text-[0.95rem] font-light leading-relaxed text-white/40">
                 Langfristige Kooperationen mit Vereinen im Nachwuchs- und Leistungsbereich.
               </p>
             </div>
+
+            <div className="grid grid-cols-1 gap-4 mb-6">
+              {vereinsvorteile.map((v) => (
+                <div
+                  key={v.label}
+                  className="relative flex flex-col gap-5 rounded-2xl border border-white/5 bg-[#111] p-7 overflow-hidden"
+                >
+                  <div className="absolute left-0 top-0 h-full w-[3px] rounded-l-2xl bg-gradient-to-b from-[#3fbf8d] to-transparent" />
+                  <div className="flex h-10 w-10 items-center justify-center rounded-xl border border-[#3fbf8d]/30 text-[#3fbf8d]">
+                    {v.icon}
+                  </div>
+                  <div>
+                    <p className="text-sm font-semibold text-white mb-2">{v.label}</p>
+                    <p className="text-[0.85rem] font-light leading-relaxed text-white/40">{v.desc}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            <CTAButton label="Vereinsanfrage stellen" href="/kontakt" />
           </div>
 
-          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4 mb-14">
-            {vereinsvorteile.map((v) => (
-              <div
-                key={v.label}
-                className="relative flex flex-col gap-5 rounded-2xl border border-white/5 bg-[#111] p-7 overflow-hidden"
-              >
-                <div className="absolute left-0 top-0 h-full w-[3px] rounded-l-2xl bg-gradient-to-b from-[#3fbf8d] to-transparent" />
-                <div className="flex h-10 w-10 items-center justify-center rounded-xl border border-[#3fbf8d]/30 text-[#3fbf8d]">
-                  {v.icon}
-                </div>
-                <div>
-                  <p className="text-sm font-semibold text-white mb-2">{v.label}</p>
-                  <p className="text-[0.85rem] font-light leading-relaxed text-white/40">{v.desc}</p>
-                </div>
+          {/* Rundes Bild */}
+          <div className="flex justify-center md:justify-end">
+            <div className="relative">
+              <div className="absolute inset-0 rounded-full border border-[#3fbf8d]/20 scale-110" />
+              <div className="absolute inset-0 rounded-full border border-[#3fbf8d]/10 scale-125" />
+              <div className="relative h-[300px] w-[300px] overflow-hidden rounded-full border border-white/5 md:h-[360px] md:w-[360px]">
+                <Image
+                  src="/images/training-athletik-fuer-vereine.avif"
+                  alt="Athletiktraining für Vereine"
+                  fill
+                  sizes="(max-width: 768px) 300px, 360px"
+                  style={{ objectFit: "cover" }}
+                  className="rounded-full"
+                />
               </div>
-            ))}
+            </div>
           </div>
-
-          <CTAButton label="Vereinsanfrage stellen" href="/kontakt" />
 
         </div>
       </section>
@@ -387,9 +408,10 @@ export default function Leistungen() {
               <div className="absolute inset-0 rounded-full border border-[#3fbf8d]/10 scale-125" />
               <div className="relative h-[300px] w-[300px] overflow-hidden rounded-full border border-white/5 md:h-[360px] md:w-[360px]">
                 <Image
-                  src="/images/hundetraining-leistung.avif"
+                  src="/images/training-fit-an-frischen-luft.avif"
                   alt="Training im Park — Fit an der frischen Luft"
                   fill
+                  sizes="(max-width: 768px) 300px, 360px"
                   style={{ objectFit: "cover" }}
                   className="rounded-full"
                 />
@@ -429,10 +451,6 @@ export default function Leistungen() {
                 Wo wir<br />
                 <span className="text-[#3fbf8d]">trainieren.</span>
               </h2>
-              <p className="text-[0.95rem] font-light leading-relaxed text-white/40 md:max-w-xs">
-                Vier Standorte in der Region —<br />
-                immer nah an dir.
-              </p>
             </div>
           </div>
 
@@ -442,13 +460,13 @@ export default function Leistungen() {
                 label: "Standort 1",
                 ort: "PRIME TIME fitness",
                 beschreibung: "DUMMY-TEXT-LALA",
-                href: "https://maps.google.com",
+                href: "https://maps.app.goo.gl/tiBGCfeQ4TN3j5kX6",
               },
               {
                 label: "Standort 2",
                 ort: "Physio am Viktualienmarkt",
                 beschreibung: "DUMMY-TEXT-LALA",
-                href: "https://maps.google.com",
+                href: "https://maps.app.goo.gl/udCDp783Ex7Vofgp9",
               },
               {
                 label: "Standort 3",
@@ -465,7 +483,7 @@ export default function Leistungen() {
             ].map((s, i) => (
               <div key={s.label} className="flex flex-col items-center text-center gap-6">
 
-                {/* Kreis-Bild */}
+                {/* Kreis-Bild 
                 <div className="relative">
                   <div className="absolute inset-0 rounded-full border border-[#3fbf8d]/20 scale-110" />
                   <div className="absolute inset-0 rounded-full border border-[#3fbf8d]/10 scale-125" />
@@ -479,7 +497,7 @@ export default function Leistungen() {
                     />
                   </div>
                 </div>
-
+                */}
                 {/* Text */}
                 <div className="flex flex-col gap-2">
                   <span className="text-[0.65rem] uppercase tracking-[0.2em] text-[#3fbf8d]">
@@ -491,9 +509,11 @@ export default function Leistungen() {
                   >
                     {s.ort}
                   </h3>
+                  {/*
                   <p className="text-[0.85rem] font-light leading-relaxed text-white/40">
                     {s.beschreibung}
                   </p>
+                  */}
                 </div>
 
                 {/* Link */}

@@ -18,7 +18,7 @@ export const metadata = {
     title: "Über mich - Athletiktrainer für Performance & Entwicklung",
     description:
       "Mein Ansatz als Athletiktrainer: strukturiert, individuell und wissenschaftlich fundiert - für nachhaltige Leistungssteigerung.",
-    url: "https://www.deine-domain.de/ueber-mich",
+    url: "https://www.peterfy-performance.de/ueber-mich",
     siteName: "Peterfy Performance",
     type: "profile",
     locale: "de_DE",
@@ -113,7 +113,6 @@ const stationen = [
 ];
 
 const stats = [
-  { value: "1,0", label: "Bachelor-Abschluss", sub: "Sportwissenschaft" },
   { value: "TUM", label: "Masterstudium", sub: "TU München" },
   { value: "FCB", label: "Station", sub: "FC Bayern München" },
 ];
@@ -184,6 +183,7 @@ export default function UeberMich() {
                 width={280}
                 height={420}
                 style={{ height: "auto" }}
+                priority
                 className="relative rounded-2xl object-cover w-[260px] sm:w-[280px]"
               />
             </div>

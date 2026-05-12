@@ -12,8 +12,8 @@ export const metadata = {
   openGraph: {
     title: "Erfahrungen im Athletiktraining | Ergebnisse & Feedback",
     description:
-      "Echte Ergebnisse aus dem Athletiktraining – Feedback von Sportlern und Einblicke in die Entwicklung.",
-    url: "https://www.deine-domain.de/erfahrungen",
+      "Echte Ergebnisse aus dem Athletiktraining - Feedback von Sportlern und Einblicke in die Entwicklung.",
+    url: "https://www.peterfy-performance.de/erfahrungen",
     siteName: "Peterfy Performance",
     type: "website",
     locale: "de_DE",
