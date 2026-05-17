@@ -44,7 +44,7 @@ const leistungen = [
     headline: "Individuell.",
     sub: "Maximale Aufmerksamkeit. Dein Training, dein Tempo, dein Ziel.",
     beschreibung:
-      "Im 1:1 Training steht du im Mittelpunkt. Jede Einheit wird individuell auf deine Stärken, Schwächen und Ziele abgestimmt. Kein Standardprogramm — sondern ein System, das für dich entwickelt wurde.",
+      "Im 1:1 Training stehst du im Mittelpunkt. Jede Einheit wird individuell auf deine Stärken, Schwächen und Ziele abgestimmt. Kein Standardprogramm — sondern ein System, das für dich entwickelt wurde.",
     punkte: [
       "Individuelle Trainingsplanung",
       "Direktes Feedback in Echtzeit",

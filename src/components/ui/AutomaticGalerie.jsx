@@ -2,7 +2,6 @@
 import { useEffect, useRef } from "react";
 
 const media = [
-  "/images/image-003 (7).avif",
   "/images/image-002.avif",
   "/images/image-003 (6).avif",
   "/images/vid_001.mp4",

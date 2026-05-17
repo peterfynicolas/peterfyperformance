@@ -52,7 +52,7 @@ export default function Kontakt() {
             <span className="text-[#3fbf8d]">reden.</span>
           </h1>
           <p className="mt-6 text-[0.95rem] font-light leading-relaxed text-white/40 max-w-sm">
-            Kein langer Prozess — schreib uns kurz und wir melden uns
+            Kein langer Prozess — schreib uns kurz und ich melde mich
             innerhalb von 24 Stunden.
           </p>
         </div>
@@ -75,7 +75,7 @@ export default function Kontakt() {
                 <span className="text-[#3fbf8d]">erhalten.</span>
               </p>
               <p className="text-[0.95rem] font-light leading-relaxed text-white/40">
-                Wir melden uns so schnell wie möglich bei dir. Bis gleich.
+                Ich melde mich so schnell wie möglich bei dir. Bis gleich.
               </p>
             </div>
           ) : (
@@ -253,7 +253,7 @@ export default function Kontakt() {
                 Was dich erwartet
               </p>
               {[
-                { label: "Antwort in 24h", desc: "Wir melden uns schnell und unkompliziert." },
+                { label: "Antwort in 24h", desc: "Ich melde mich schnell und unkompliziert." },
                 { label: "Kein Vertrag nötig", desc: "Erstgespräch ist kostenlos und unverbindlich." },
                 { label: "Individuell", desc: "Kein Copy-Paste — jeder Athlet ist anders." },
               ].map((item) => (

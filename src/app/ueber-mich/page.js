@@ -113,7 +113,7 @@ const stationen = [
 ];
 
 const stats = [
-  { value: "TUM", label: "Masterstudium", sub: "TU München" },
+  { value: "TUM", label: "Master", sub: "TU München" },
   { value: "FCB", label: "Station", sub: "FC Bayern München" },
 ];
 
@@ -228,11 +228,11 @@ export default function UeberMich() {
             </div>
 
             {/* Stats */}
-            <div className="grid grid-cols-3 gap-4">
+            <div className="grid grid-cols-2 gap-4">
               {stats.map((s) => (
                 <div
                   key={s.value}
-                  className="flex flex-col gap-1 rounded-2xl border border-white/5 bg-[#111] p-5"
+                  className="flex flex-col gap-1 rounded-2xl border border-white/5 bg-[#111] p-5 text-center sm:text-left"
                 >
                   <span
                     className="text-[#3fbf8d] leading-none tracking-tight"
