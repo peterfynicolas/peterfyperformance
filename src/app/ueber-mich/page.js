@@ -113,7 +113,7 @@ const stationen = [
 ];
 
 const stats = [
-  { value: "TUM", label: "Master", sub: "TU München" },
+  { value: "TUM", label: "Masterstudium", sub: "TU München" },
   { value: "FCB", label: "Station", sub: "FC Bayern München" },
 ];
 
